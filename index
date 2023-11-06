@@ -1,0 +1,443 @@
+<!doctype html>
+
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>K‘s Portfolio</title>
+		</head>
+
+
+		<style>
+
+			html{
+				width: 100%;
+			}
+
+
+			body{
+				background-color:#EEEEEE;
+			}
+
+			.menu{
+				position: fixed;
+				right: 0;
+				z-index: 100;
+				width: 200px;
+				margin-top: 10px;
+				margin-right: 50px;
+				}
+
+			.menu a{
+				font-size: 2em;
+				font-family: "Helvetica";
+				color: #000000;
+				text-decoration: none;
+				}
+
+			ul{
+				text-decoration: none;
+				list-style-type: none;
+				text-align: right;
+				}
+
+			li a:hover{
+				color: #000;
+				font-style: italic;
+				}
+
+			.active{
+				font-weight: 800;
+				}
+
+
+			h1{ font-family: 'Helvetica';
+				font-size: 20vw;
+				line-height: 15vw;
+				margin-left: 40px;
+				margin-top: 340px;
+				color: black;
+				}
+
+			.rotatetext{
+				position: absolute;
+				}
+
+
+			.introtext{
+				position: absolute;
+				margin-top: 1100px;
+				display: block;
+				max-width: 600px;
+				margin-right: 0;
+				margin-left: 80px;
+				}
+
+			.introtext h4{
+				font-family: "Helvetica";
+				font-size:2em;
+				color: #000;
+				max-width: 600px;
+				font-weight: normal;
+				margin-bottom: 150px;
+				}
+
+			.buttonmove1{
+				position: fixed;
+				height: 33px;
+				width: 33px;
+				border-radius:50%;
+				background: black;
+				right: 0;
+				margin-top: 240px;
+				margin-right: 50px;
+				animation: myfirst 2.0s infinite;
+				animation-direction: alternate;
+				}
+
+			@keyframes myfirst {
+			0%{background:black; bottom:0px;top:80px;}
+			25%{background:black; bottom:30px; top:0px;}
+			}
+			
+			
+			
+
+			.movep{
+				font-family: "Helvetica";
+				margin-right: 0;
+				}
+
+			#myBtntop {
+				font-size: 1.5em;
+				border: none;
+				outline: none;
+				background-color: black;
+				color: #eeeeee;
+				cursor: pointer;
+				padding: 11px 7px;
+				}
+
+
+			#myBtntop:hover {
+				background-color: black;
+				}
+
+
+			.buttonmove2{
+				position: relative;
+				float: right;
+				margin-left:80%;
+				margin-right:80px;
+				margin-top: 900px;
+				margin-bottom: 150px;
+				width: 20px;
+				height: 20px;
+				background: transparent;
+				position: relative;
+				animation: mysecond 2.0s infinite;
+				animation-direction: alternate;
+				}
+
+				.buttonmove3{
+				position: relative;
+				float: right;
+				margin-right:800px;
+				margin-top: 880px;
+				width: 80px;
+				background: transparent;
+				animation: mythird 2.0s infinite;
+				animation-direction: alternate-reverse;
+				animation-iteration-count: 1;
+				}
+			
+				.buttonmove3{
+					margin-top:260px;
+					float: right;
+					}
+				
+				.buttonmove3 img{
+					margin-left: 280px;
+					width: 300px;
+					}
+				
+				.buttonmove3 h4{
+					margin-top:-58px;
+					font-size: 4em;
+					color:#EEEEEE;
+					margin-left: 280px;
+					}
+			
+
+			@keyframes mythird {
+			from {left: 0px;}
+			to {left: 200px; background-color: transparent;}
+			}
+			
+			
+			
+			
+
+			@media screen and (max-width: 768px){
+
+				.rotatetext{
+					transform: rotate(270deg);
+					margin-top: 300px;
+					margin-left: -70px;
+				}
+
+				h1{
+					margin-top: 0;
+					font-size: 30vw;
+					line-height: 25vw;
+				}
+
+				.introtext{
+					margin-top: 1200px;
+				}
+
+				.introtext h4{
+					margin-bottom: 250px;
+				}
+
+				.buttonmove2{
+					margin-left:80%;
+					margin-top: 1200px;
+					width: 20px;
+					height: 20px;
+					background: transparent;
+					position: relative;
+					animation: mysecond 2.0s infinite;
+					animation-direction: alternate;
+					margin-bottom:50px;
+					
+				}
+				
+				.buttonmove3{
+					position: relative;
+					float: right;
+					margin-right:35%;
+					margin-top: 1000px;
+					width: 80px;
+					height: 80px;
+					background: transparent;
+					animation: mythird 2.0s infinite;
+					animation-direction: alternate-reverse;
+					animation-iteration-count: 1;
+					}
+			
+				.buttonmove3{
+					margin-top:400px;
+					float: right;
+					}
+				
+				.buttonmove3 h4{
+					margin-left: 30px;
+					font-size:1.5em;
+					}
+				
+				.buttonmove3 img{
+					margin-left: 33%;
+					width: 100px;
+					}
+			
+				@keyframes mythird {
+				from {left: 0px;}
+				to {left: -100px; background-color: transparent;}
+				}
+				
+				
+			}
+			
+			
+			
+			@media screen and (max-width: 481px){
+				
+				.buttonmove1{
+					color: transparent;
+					background-color: transparent;
+				}
+				
+				@keyframes myfirst {
+			0%{background:transparent; bottom:0px;top:80px;}
+			25%{background:transparent; bottom:30px; top:0px;}
+			}
+					
+				.rotatetext{
+					transform: rotate(270deg);
+					margin-top: 150px;
+					margin-left: -70px;
+				}
+
+				h1{
+					margin-top: 47px;
+					font-size: 34vw;
+					line-height: 29vw;
+					color:black;
+				}
+
+				.menu a{
+					font-size: 1.5em;
+					font-family: "Helvetica";
+					color: #000000;
+					text-decoration: none;
+				}
+
+
+				.introtext{
+					margin-top: 530px;
+					display: block;
+					max-width: 401px;
+					margin-right: 20px;
+					margin-left: 25px;
+				}
+
+				.introtext h4{
+					font-family: "Helvetica";
+					font-size:1.5em;
+					color: #000;
+					max-width: 401px;
+					font-weight: normal;
+					margin-bottom: 0px;
+				}
+				
+
+				.buttonmove2{	
+					margin-left:80%;
+					margin-top: 80px;
+					margin-bottom:10px;
+					width: 20px;
+					height: 20px;
+					background: transparent;
+					position: relative;
+					animation: mysecond 2.0s infinite;
+					animation-direction: alternate;
+					}
+				#myBtntop{
+					color:transparent;
+					background-color: transparent;
+				
+				}
+				
+					
+				
+				.buttonmove3{
+					margin-top:390px;
+					float: right;
+				margin-right:72px;
+					animation-iteration-count: 1;
+					}
+				
+				.buttonmove3 img{
+					margin-left: 20px;
+					width: 90px;
+					}
+				
+				.buttonmove3 h4{
+					margin-left:17px;
+					margin-top: -22px;
+					font-size: 1.5em;
+					line-height: 0.9em;
+					
+			
+				}
+				
+				
+				@keyframes mythird {
+				from {left: 0px;}
+				to {left: -280px; background-color: transparent;}
+				}
+
+
+
+
+
+			}
+
+
+
+		</style>
+
+
+		<body>
+			
+			<div class="menu">
+					<ul>
+						<li>
+							<a href="3 Kportfolio about me.html">About Me</a>
+						</li>
+						<li>
+							<a href="2 Kportfolio Contact.html">Contact</a>
+						</li>
+						<li>
+							<a href="1 Kportfolio Work Kopie.html">Work</a>
+						</li>
+						<li>
+							<a class="active" href="index.html">K</a>
+						</li>
+						<li>
+							<a href="theportfolio Imprint.html">I+DP</a>
+						</li>
+					</ul>
+			</div>
+
+
+			<div class="rotatetext">
+				<h1>
+				WEL <br> COME <br>
+				</h1>
+			</div>
+
+
+			<div class="buttonmove1">
+				<p class="movep"> </p>
+			</div>
+			
+			<div class="buttonmove3">
+				<img class="imghand" src="IMAGES /20210131_173545 Kopie 4.jpg" alt="My Hand">
+				<h4> ~WAVE~</h4>
+			</div>
+
+
+			<div class="introtext">
+			
+					<h4 class="title">
+					You found your way into my little digital room. Here I present examples of my graphic design work.
+					</h4>
+			
+			</div>
+
+
+			<div class="buttonmove2">
+					<p class="movep"> </p>
+					<button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+			</div>
+
+
+
+				<script>
+				var mybutton = document.getElementById("myBtntop");
+				window.onscroll = function() {scrollFunction()};
+
+
+
+				function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+				} else {
+				mybutton.style.display = "none";
+				}
+				}
+
+
+
+				function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+				}
+				</script>
+
+		</body>
+
+</html>
