@@ -69,7 +69,7 @@
 				font-size: 20vw;
 				line-height: 10vw;
 				margin-left: 40px;
-				margin-top: 80%;
+				margin-top: 60%;
 				color: black;
 				}
 
@@ -98,20 +98,24 @@
 
 			.buttonmove1{
 				position: fixed;
+				color: #003AFF;
+				z-index: -100;
 				height: 1000px;
 				width: 1000px;
 				border-radius:50%;
 				background: black;
 				right: 0;
-				margin-top: 240px;
 				margin-right: 50px;
-				animation: myfirst 1.0s infinite;
+				animation: myfirst 2.0s infinite;
 				animation-direction: alternate;
 				}
 
 			@keyframes myfirst {
 			0%{background:black; bottom:0px; top:240px;}
 			25%{background:black; bottom:240px; top:0px;}
+			50%{background:black; bottom:0px; top:240px;}
+			75%{background:black; bottom:240px; top:0px;}
+			100%{background:black; bottom:0px; top:240px;}
 			}
 			
 			
@@ -230,11 +234,13 @@
 				
 				.buttonmove3{
 					position: relative;
+					z-index:-1000;
 					float: right;
 					margin-right:35%;
 					margin-top: 1000px;
 					width: 80px;
 					height: 80px;
+					color: #0CFF00;
 					background: transparent;
 					animation: mythird 2.0s infinite;
 					animation-direction: alternate-reverse;
