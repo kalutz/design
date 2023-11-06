@@ -94,20 +94,20 @@
 			
 			
 			
-			div {
+			.rectangle{
 			  width: 1000px;
 			  height: 1000px;
 			  background-color: blue;
-			  position: relative;
-			  animation-name: example;
-			  animation-duration: 6s;
+			  position: fixed;
+			  animation-name: rectangle;
+			  animation-duration: 10s;
 			}
 			
-			@keyframes example {
+			@keyframes rectangle {
 			  0%   {background-color:blue; left:0px; top:0px;}
-			  25%  {background-color:lightblue; left:200px; top:0px;}
-			  50%  {background-color:grey; left:200px; top:200px;}
-			  75%  {background-color:green; left:0px; top:200px;}
+			  25%  {background-color:blue; left:200px; top:0px;}
+			  50%  {background-color:blue; left:200px; top:200px;}
+			  75%  {background-color:blue; left:0px; top:200px;}
 			  100% {background-color:blue; left:0px; top:0px;}
 			}
 			
@@ -116,7 +116,7 @@
 
 			.buttonmove1{
 				position: fixed;
-				color: #003AFF;
+				color: black;
 				z-index: -100;
 				height: 1000px;
 				width: 1000px;
@@ -160,38 +160,6 @@
 				animation-direction: alternate;
 				}
 
-				.buttonmove3{
-				position: relative;
-				float: right;
-				margin-right:800px;
-				margin-top: 880px;
-				width: 80px;
-				background: transparent;
-				animation: mythird 2.0s infinite;
-				animation-direction: alternate-reverse;
-				animation-iteration-count: 1;
-				}
-			
-				.buttonmove3{
-					margin-top:260px;
-					float: right;
-					}
-				
-				
-				.buttonmove3 h4{
-					font-family: 'DM Sans', sans-serif;
-					margin-top:-58px;
-					font-size: 10em;
-					color:#00000;
-					margin-left: 280px;
-					}
-			
-
-			@keyframes mythird {
-			from {left: 0px;}
-			to {left: 200px; background-color: transparent;}
-			}
-			
 			
 			
 			
@@ -226,38 +194,8 @@
 					
 				}
 				
-				.buttonmove3{
-					position: relative;
-					z-index:-1000;
-					float: right;
-					margin-right:35%;
-					margin-top: 1000px;
-					width: 80px;
-					height: 80px;
-					color: #0CFF00;
-					background: transparent;
-					animation: mythird 2.0s infinite;
-					animation-direction: alternate-reverse;
-					animation-iteration-count: 1;
-					}
-			
 				
-				.buttonmove3 h4{
-					margin-left: 30px;
-					font-size: 2em;
-					font-family: 'DM Sans', sans-serif;
-					font-color: #000000;
-					}
-				
-				.buttonmove3 img{
-					margin-left: 33%;
-					width: 100px;
-					}
-			
-				@keyframes mythird {
-				from {left: 0px;}
-				to {left: -100px; background-color: transparent;}
-				}	
+		
 			}
 			
 			
@@ -323,27 +261,7 @@
 			
 				
 				
-				.buttonmove3{
-					font-family: 'DM Sans', sans-serif;
-					font-color: #000000;
-					margin-top:390px;
-					float: right;
-					margin-right:72px;
-					animation-iteration-count: 1;
-					margin-left:17px;
-					margin-top: -22px;
-					font-size: 4em;
-					line-height: 0.9em;
-						
-				}
-				
-				
-				@keyframes mythird {
-				from {left: 0px;}
-				to {left: -280px; background-color: transparent;}
-				}
-
-
+	
 
 			}
 
@@ -359,14 +277,16 @@
 			
 				<ul>
 				  <li><a class="active" href="aboutme.html">About Me</a></li>
-				  <li><a href="#news">News</a></li>
+				  <li><a href="#news">Projects</a></li>
 				  <li><a href="#contact">Contact</a></li>
-				  <li><a href="#about">About</a></li>
+				  <li><a href="#about">Imprint</a></li>
 				</ul>
 	
 			</div>
 
-
+			
+					<div class="rectangle">
+					</div>
 
 
 			<div class="buttonmove1">
