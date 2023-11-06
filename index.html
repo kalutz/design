@@ -27,10 +27,8 @@
 			}
 
 
-
-
 				ul {
-				font-family: 'DM Sans', sans-serif;
+				  font-family: 'DM Sans', sans-serif;
 				  list-style-type: none;
 				  margin: 0;
 				  padding: 0;
@@ -55,10 +53,11 @@
 				
 				li a:hover:not(.active) {
 				  background-color: #c4c4c4;
+				  font-style: italic;
 				}
 				
 				.active {
-				font-weight:1000;
+				font-weight:800;
 				}
 			
 			
@@ -66,11 +65,11 @@
 
 
 			h1{ 	font-family: 'DM Sans', sans-serif;
-				font-weight: 1000;
+				font-weight: 800;
 				font-size: 20vw;
-				line-height: 80%;
+				line-height: 10vw;
 				margin-left: 40px;
-				margin-top: 340px;
+				margin-top: 80%;
 				color: black;
 				}
 
@@ -81,7 +80,7 @@
 
 			.introtext{
 				position: absolute;
-				margin-top: 500px;
+				margin-top: 1000px;
 				display: block;
 				max-width: 600px;
 				margin-right: 0;
@@ -99,20 +98,20 @@
 
 			.buttonmove1{
 				position: fixed;
-				height: 60px;
-				width: 60px;
+				height: 1000px;
+				width: 1000px;
 				border-radius:50%;
 				background: black;
 				right: 0;
 				margin-top: 240px;
 				margin-right: 50px;
-				animation: myfirst 2.0s infinite;
+				animation: myfirst 1.0s infinite;
 				animation-direction: alternate;
 				}
 
 			@keyframes myfirst {
-			0%{background:black; bottom:0px; top:70px;}
-			25%{background:black; bottom:30px; top:0px;}
+			0%{background:black; bottom:0px; top:240px;}
+			25%{background:black; bottom:240px; top:0px;}
 			}
 			
 			
@@ -150,7 +149,7 @@
 				height: 20px;
 				background: transparent;
 				position: relative;
-				animation: mysecond 2.0s infinite;
+				animation: mysecond 1.0s infinite;
 				animation-direction: alternate;
 				}
 
